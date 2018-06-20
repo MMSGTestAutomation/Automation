@@ -1,0 +1,3 @@
+#Ignore files with below extensions
+*.html
+*.log
