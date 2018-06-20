@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="OrderedTest1" storage="c:\automationmmsg\mmsg.acceptance.mol.tests\productacceptanceorderedtest\unittestcase\orderedtest1.orderedtest" id="eea9be19-f73a-4b64-b944-4f4a5c80dc9b" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="32cabc3f-4745-e706-3f2b-b974b44e9cb8" name="LoginAsMOLUserWithValidUserNameAndValidPassword" storage="..\..\bin\debug\mmsg.acceptance.mol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="8786df62-0dff-a011-8be7-7477b2f64084" name="VerifyCommunicationPreferencesConatinsAllTheCheckBoxAreBeenChecked" storage="..\..\bin\debug\mmsg.acceptance.mol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="d1276327-60cc-0d1b-4244-a74020a257be" name="LogoutAsMOLUser" storage="..\..\bin\debug\mmsg.acceptance.mol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

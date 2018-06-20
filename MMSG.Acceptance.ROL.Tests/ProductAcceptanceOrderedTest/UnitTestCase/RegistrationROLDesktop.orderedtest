@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="registrationroldesktop" storage="c:\users\nithyap\testnitauto\mmsg.acceptance.rol.tests\productacceptanceorderedtest\unittestcase\registrationroldesktop.orderedtest" id="794cca78-c4ab-4472-ad2f-f4169a4dc62d" continueAfterFailure="true" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="4e6057e2-a060-682d-7d37-af86ec77eea7" name="LaunchROLURLAsROLWalletTransactionUser" storage="..\..\bin\debug\mmsg.acceptance.rol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="9d5c922f-49ee-371f-154f-e81cff71c146" name="ValidateTheErrorHandlingFunctionalityOfROL" storage="..\..\bin\debug\mmsg.acceptance.rol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

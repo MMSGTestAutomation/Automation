@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="TestCase_Comet_EAMSCreatedForNewEmployee" storage="c:\users\nithyap\latesttestautomation\mmsg.acceptance.comet.tests\productacceptanceorderedtest\unittestcase\testcase_comet_eamscreatedfornewemployee.orderedtest" id="bdadd1a8-d048-4eae-b976-5edea4dc4021" continueAfterFailure="true" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="a2cf9368-0d7c-d23b-bfbb-8aab13dd7555" name="UserLaunchCometURL" storage="..\..\bin\debug\mmsg.acceptance.comet.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="578c32af-b5f4-ae01-47a5-741ce5ab3c1e" name="CreateNewEmployeeAsCommetUser" storage="..\..\bin\debug\mmsg.acceptance.comet.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="dfdceb46-cbf5-3db7-6cfe-68e6a4893bfc" name="VerifyEAMSAccountGenerationForNewlyCreatedEmployee" storage="..\..\bin\debug\mmsg.acceptance.comet.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="833f85a2-2b29-f266-68a8-88f40bc58844" name="LogoutAsCometUser" storage="..\..\bin\debug\mmsg.acceptance.comet.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

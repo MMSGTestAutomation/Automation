@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FDE1A89C-4FCF-45C6-8B12-D43AF6119FE3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MMSG.Pages</RootNamespace>
+    <AssemblyName>MMSG.Pages</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TFS|AnyCPU'">
+    <OutputPath>bin\TFS\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.4.9.5, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.9.5\lib\Net45\HtmlAgilityPack.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="TechTalk.SpecFlow, Version=1.9.0.77, Culture=neutral, PublicKeyToken=0778194805d6db41, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.8.0\lib\net45\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.8.0\lib\net45\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="Exceptions\FaultErrorMessages.cs" />
+    <Compile Include="Exceptions\FaultMessageConfiguration.cs" />
+    <Compile Include="UI Pages\ApplicationRegistrationPage.cs" />
+    <Compile Include="UI Pages\ApplicationRegistrationResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApplicationRegistrationResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\ApplictionForgotPasswordPage.cs" />
+    <Compile Include="UI Pages\ApplictionForgotPasswordResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApplictionForgotPasswordResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\AdminFeesForPackagePage.cs" />
+    <Compile Include="UI Pages\Comet\AdminFeesForPackageResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AdminFeesForPackageResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\AmendmentPage.cs" />
+    <Compile Include="UI Pages\Comet\AmendmentResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AmendmentResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\Amendment_BenefitPage.cs" />
+    <Compile Include="UI Pages\Comet\Amendment_BenefitResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Amendment_BenefitResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\CallCentreEnquiryPage.cs" />
+    <Compile Include="UI Pages\Comet\CallCentreEnquiryResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CallCentreEnquiryResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\Eams\WrapperPage.cs" />
+    <Compile Include="UI Pages\Comet\Eams\WrapperResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WrapperResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\Employee_personaldetailsPage.cs" />
+    <Compile Include="UI Pages\Comet\Employee_personaldetailsResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee_personaldetailsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\IQueuePages\CreateRequestPage.cs" />
+    <Compile Include="UI Pages\Comet\IQueuePages\CreateRequestResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreateRequestResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\IQueuePages\ViewRequestPage.cs" />
+    <Compile Include="UI Pages\Comet\IQueuePages\ViewRequestResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewRequestResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\MaxxiaWalletPage.cs" />
+    <Compile Include="UI Pages\Comet\MaxxiaWalletResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MaxxiaWalletResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\MotorVehicle_AccessoriesPage.cs" />
+    <Compile Include="UI Pages\Comet\MotorVehicle_AccessoriesResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MotorVehicle_AccessoriesResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\MotorVehicle_Base_DetailsPage.cs" />
+    <Compile Include="UI Pages\Comet\MotorVehicle_Base_DetailsResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MotorVehicle_Base_DetailsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\MotorVehicle_FuelCardsPage.cs" />
+    <Compile Include="UI Pages\Comet\MotorVehicle_FuelCardsResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MotorVehicle_FuelCardsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\MotorVehicle_RegistrationsPage.cs" />
+    <Compile Include="UI Pages\Comet\MotorVehicle_RegistrationsResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MotorVehicle_RegistrationsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\MotorVehicle_SearchPage.cs" />
+    <Compile Include="UI Pages\Comet\MotorVehicle_SearchResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MotorVehicle_SearchResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\Package_basedetailsPage.cs" />
+    <Compile Include="UI Pages\Comet\Package_basedetailsResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Package_basedetailsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\Package_packageadmindetailsPage.cs" />
+    <Compile Include="UI Pages\Comet\Package_packageadmindetailsResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Package_packageadmindetailsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\Package_payrolldetailsPage.cs" />
+    <Compile Include="UI Pages\Comet\Package_payrolldetailsResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Package_payrolldetailsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\PaymentInstructionPage.cs" />
+    <Compile Include="UI Pages\Comet\PaymentInstructionResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PaymentInstructionResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\Process Menu\AddBenefitPage.cs" />
+    <Compile Include="UI Pages\Comet\Process Menu\AddBenefitPageResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddBenefitPageResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\ReviewActivatePage.cs" />
+    <Compile Include="UI Pages\Comet\ReviewActivateResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReviewActivateResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\SearchForCoustomerRequetsPage.cs" />
+    <Compile Include="UI Pages\Comet\SearchForCoustomerRequeustResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SearchForCoustomerRequeustResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\Comet\VerifyBudgetAmountTransactionPage.cs" />
+    <Compile Include="UI Pages\Comet\VerifyBudgetAmountTransactionResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VerifyBudgetAmountTransactionResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Exceptions\ExceptionHandler.cs" />
+    <Compile Include="Exceptions\GenericPageException.cs" />
+    <Compile Include="Exceptions\LoginFailedException.cs" />
+    <Compile Include="UI Pages\BrowseMMSGUserURL.cs" />
+    <Compile Include="UI Pages\ApplicationLoginPageResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApplicationLoginPageResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\LoginPage.cs" />
+    <Compile Include="UI Pages\LogoutPage.cs" />
+    <Compile Include="UI Pages\MOL\ActivationSitePages\ActivateLogin.cs" />
+    <Compile Include="UI Pages\MOL\ActivationSitePages\ActivateLoginResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ActivateLoginResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\MOL\ActivationSitePages\BenefitPage.cs" />
+    <Compile Include="UI Pages\MOL\ActivationSitePages\BenefitSelectPage.cs" />
+    <Compile Include="UI Pages\MOL\ActivationSitePages\BenefitSelectResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BenefitSelectResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\MOL\ActivationSitePages\SMSValidationPage.cs" />
+    <Compile Include="UI Pages\MOL\ActivationSitePages\SMSValidationResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMSValidationResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\MOL\ActivationSitePages\SuccessPage.cs" />
+    <Compile Include="UI Pages\MOL\ActivationSitePages\SuccessResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SuccessResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\MOL\ClaimStatusPage.cs" />
+    <Compile Include="UI Pages\MOL\ClaimStatusResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClaimStatusResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\MOL\Claims\ClaimDetailsPage.cs" />
+    <Compile Include="UI Pages\MOL\Claims\ClaimDetailsResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClaimDetailsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\MOL\Claims\SelectBenefitPage.cs" />
+    <Compile Include="UI Pages\MOL\Claims\SelectBenefitResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SelectBenefitResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\MOL\Claims\SubmitClaimPage.cs" />
+    <Compile Include="UI Pages\MOL\Claims\SubmitClaimResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SubmitClaimResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\MOL\Claims\UploadReceiptPage.cs" />
+    <Compile Include="UI Pages\MOL\Claims\UploadReceiptResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UploadReceiptResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\MOL\Home\ContactPage.cs" />
+    <Compile Include="UI Pages\MOL\Home\ContactResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\MOL\Home\Dashboard\DashboardResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\MOL\Home\Dashboard\DashboardPage.cs" />
+    <Compile Include="UI Pages\MOL\Home\Dashboard\PayrollDeductionsAndTransfersPage.cs" />
+    <Compile Include="UI Pages\MOL\Home\Dashboard\PayrollDeductionsAndTransfersPageResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PayrollDeductionsAndTransfersPageResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\MOL\Profile\CommunicationPreferencesPage.cs" />
+    <Compile Include="UI Pages\MOL\Profile\CommunicationPreferencesResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CommunicationPreferencesResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\MOL\Profile\ProfilePersonalDetailsPage.cs" />
+    <Compile Include="UI Pages\MOL\Profile\ProfilePersonalDetailsResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProfilePersonalDetailsResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\MOL\Your Account\TransactionResource.Designer.cs">
+      <DependentUpon>TransactionResource.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="UI Pages\MOL\Your Account\TransactionsPage.cs" />
+    <Compile Include="UI Pages\ROL\ActivationSitePage\BenefitSelectPage.cs" />
+    <Compile Include="UI Pages\ROL\ActivationSitePage\BenefitSelectResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BenefitSelectResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\ROL\ActivationSitePage\SMSValidationPage.cs" />
+    <Compile Include="UI Pages\ROL\ActivationSitePage\SMSValidationResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SMSValidationResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\ROL\ActivationSitePage\SuccessPage.cs" />
+    <Compile Include="UI Pages\ROL\ActivationSitePage\SuccessResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SuccessResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\ROL\Claims\MakeAClaimPage.cs" />
+    <Compile Include="UI Pages\ROL\Claims\MakeAClaimResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MakeAClaimResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\ROL\Home\Dashboard\ContactPage.cs" />
+    <Compile Include="UI Pages\ROL\Home\Dashboard\ContactResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ContactResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\ROL\Home\Dashboard\DashboardPage.cs" />
+    <Compile Include="UI Pages\ROL\Home\Dashboard\DashboardResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DashboardResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\ROL\Profile\ChangePasswordPage.cs" />
+    <Compile Include="UI Pages\ROL\Profile\ChangePasswordResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChangePasswordResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\ROL\Profile\PersonalDetailsPage.cs" />
+    <Compile Include="UI Pages\ROL\Your Account\TransactionResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TransactionResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI Pages\ROL\Your Account\TransactionsPage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MMSG.Automation\MMSG.Automation.csproj">
+      <Project>{61a28c3b-47ee-4f4b-a293-69d714d41e0b}</Project>
+      <Name>MMSG.Automation</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI Pages\ApplicationLoginPageResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ApplicationLoginPageResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\ApplicationRegistrationResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ApplicationRegistrationResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\ApplictionForgotPasswordResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ApplictionForgotPasswordResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\AdminFeesForPackageResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AdminFeesForPackageResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\AmendmentResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AmendmentResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\Amendment_BenefitResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Amendment_BenefitResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\CallCentreEnquiryResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CallCentreEnquiryResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\Eams\WrapperResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>WrapperResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\Employee_personaldetailsResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Employee_personaldetailsResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\IQueuePages\CreateRequestResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CreateRequestResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\IQueuePages\ViewRequestResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ViewRequestResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\MaxxiaWalletResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MaxxiaWalletResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\MotorVehicle_AccessoriesResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MotorVehicle_AccessoriesResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\MotorVehicle_Base_DetailsResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MotorVehicle_Base_DetailsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\MotorVehicle_FuelCardsResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MotorVehicle_FuelCardsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\MotorVehicle_RegistrationsResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MotorVehicle_RegistrationsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\MotorVehicle_SearchResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MotorVehicle_SearchResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\Package_basedetailsResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Package_basedetailsResource.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\Package_packageadmindetailsResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Package_packageadmindetailsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\Package_payrolldetailsResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Package_payrolldetailsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\PaymentInstructionResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PaymentInstructionResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\Process Menu\AddBenefitPageResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AddBenefitPageResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\ReviewActivateResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ReviewActivateResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\SearchForCoustomerRequeustResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SearchForCoustomerRequeustResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\Comet\VerifyBudgetAmountTransactionResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>VerifyBudgetAmountTransactionResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\ActivationSitePages\ActivateLoginResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ActivateLoginResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\ActivationSitePages\BenefitSelectResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BenefitSelectResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\ActivationSitePages\SMSValidationResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SMSValidationResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\ActivationSitePages\SuccessResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SuccessResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\ClaimStatusResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ClaimStatusResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\Claims\ClaimDetailsResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ClaimDetailsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\Claims\SelectBenefitResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SelectBenefitResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\Claims\SubmitClaimResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SubmitClaimResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\Claims\UploadReceiptResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UploadReceiptResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\Home\ContactResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ContactResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\Home\Dashboard\DashboardResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DashboardResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\Home\Dashboard\PayrollDeductionsAndTransfersPageResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PayrollDeductionsAndTransfersPageResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\Profile\CommunicationPreferencesResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CommunicationPreferencesResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\Profile\ProfilePersonalDetailsResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProfilePersonalDetailsResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\MOL\Your Account\TransactionResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TransactionResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\ROL\ActivationSitePage\BenefitSelectResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>BenefitSelectResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\ROL\ActivationSitePage\SMSValidationResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SMSValidationResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\ROL\ActivationSitePage\SuccessResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SuccessResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\ROL\Claims\MakeAClaimResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>MakeAClaimResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\ROL\Home\Dashboard\ContactResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ContactResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\ROL\Home\Dashboard\DashboardResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DashboardResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\ROL\Profile\ChangePasswordResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ChangePasswordResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI Pages\ROL\Your Account\TransactionResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TransactionResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="FaultMessageConfiguration.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\packages\Selenium.WebDriver.IEDriver.2.53.0.0\driver\IEDriverServer.exe">
+      <Link>IEDriverServer.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="TestData\Chrysanthemum.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Selenium.Chrome.WebDriver.2.37\build\Selenium.Chrome.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.Chrome.WebDriver.2.37\build\Selenium.Chrome.WebDriver.targets'))" />
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.GeckoDriver.0.20.1\build\Selenium.WebDriver.GeckoDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.GeckoDriver.0.20.1\build\Selenium.WebDriver.GeckoDriver.targets'))" />
+  </Target>
+  <Import Project="..\packages\Selenium.Chrome.WebDriver.2.37\build\Selenium.Chrome.WebDriver.targets" Condition="Exists('..\packages\Selenium.Chrome.WebDriver.2.37\build\Selenium.Chrome.WebDriver.targets')" />
+  <Import Project="..\packages\Selenium.WebDriver.GeckoDriver.0.20.1\build\Selenium.WebDriver.GeckoDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.GeckoDriver.0.20.1\build\Selenium.WebDriver.GeckoDriver.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

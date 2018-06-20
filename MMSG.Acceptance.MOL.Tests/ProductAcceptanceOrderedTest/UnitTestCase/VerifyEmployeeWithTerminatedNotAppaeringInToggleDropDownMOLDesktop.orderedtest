@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="verifyemployeewithterminatednotappaeringintoggledropdownmoldesktop" storage="c:\users\nithyap\testnitauto\mmsg.acceptance.mol.tests\productacceptanceorderedtest\unittestcase\verifyemployeewithterminatednotappaeringintoggledropdownmoldesktop.orderedtest" id="69619edf-6fcf-476f-a0cd-a5b042bba3c0" continueAfterFailure="true" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="6825e0d6-197d-f2f6-86ea-4c42379b44c6" name="LoginAsMOLActiveAndTerminatedEmployeerEmployee" storage="..\..\bin\debug\mmsg.acceptance.mol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="71b1728e-070a-d936-19d1-d0050c4f198a" name="VerifyEmployeeWithTerminatedEmployeerNotAppeareInToggleDropDown" storage="..\..\bin\debug\mmsg.acceptance.mol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="d1276327-60cc-0d1b-4244-a74020a257be" name="LogoutAsMOLUser" storage="..\..\bin\debug\mmsg.acceptance.mol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

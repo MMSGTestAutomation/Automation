@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="eamsverifythevmsbalanceswithcometcometdesktop" storage="c:\users\nithyap\testnitauto\mmsg.acceptance.comet.tests\productacceptanceorderedtest\unittestcase\eamsverifythevmsbalanceswithcometcometdesktop.orderedtest" id="77cf5edb-caa1-4fbd-b528-8b492c0cd9a3" continueAfterFailure="true" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="a2cf9368-0d7c-d23b-bfbb-8aab13dd7555" name="UserLaunchCometURL" storage="..\..\bin\debug\mmsg.acceptance.comet.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="3303d5a9-bfcd-3877-5a3f-a5bd7fc452e5" name="VerifyThePageVMSBalanceIsMatchingWithTheDB" storage="..\..\bin\debug\mmsg.acceptance.comet.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="833f85a2-2b29-f266-68a8-88f40bc58844" name="LogoutAsCometUser" storage="..\..\bin\debug\mmsg.acceptance.comet.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

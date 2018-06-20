@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="verifymultipleemployeerfuctionalityincontactpagemoldesktop" storage="c:\users\nithyap\testnitauto\mmsg.acceptance.mol.tests\productacceptanceorderedtest\unittestcase\verifymultipleemployeerfuctionalityincontactpagemoldesktop.orderedtest" id="1828e479-3330-4e15-9c3e-347534a2e5e4" continueAfterFailure="true" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="712dc15b-ebf6-77c6-513b-c5b83deb5526" name="LoginAsMOLMultipleEmployeerEmployee" storage="..\..\bin\debug\mmsg.acceptance.mol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="5c6c9450-f10f-1dd2-b539-889bb544a8a1" name="VerifyTheMultipleEmployeerFuctionalityInContactPage" storage="..\..\bin\debug\mmsg.acceptance.mol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="d1276327-60cc-0d1b-4244-a74020a257be" name="LogoutAsMOLUser" storage="..\..\bin\debug\mmsg.acceptance.mol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

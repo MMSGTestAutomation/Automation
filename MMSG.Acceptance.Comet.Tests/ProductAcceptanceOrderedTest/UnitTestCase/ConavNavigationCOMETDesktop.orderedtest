@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="conavnavigationcometdesktop" storage="c:\users\nithyap\testnitauto\mmsg.acceptance.comet.tests\productacceptanceorderedtest\unittestcase\conavnavigationcometdesktop.orderedtest" id="9bb41c49-23ec-4fa4-8dc3-15575be49b9c" continueAfterFailure="true" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="a2cf9368-0d7c-d23b-bfbb-8aab13dd7555" name="UserLaunchCometURL" storage="..\..\bin\debug\mmsg.acceptance.comet.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="1fc5a85a-a2d9-8230-4a59-e3058c4095a7" name="CommetUserSearchUsingEmployeeNumberFromDB" storage="..\..\bin\debug\mmsg.acceptance.comet.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="784e7d0d-b885-d619-fd00-baceafbe7284" name="ConavNavigation" storage="..\..\bin\debug\mmsg.acceptance.comet.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="singlenovatedleasebenefittitlewithmultipleregowithdisplayedindashboardmoldisktop" storage="c:\users\nithyap\testnitauto\mmsg.acceptance.mol.tests\productacceptanceorderedtest\unittestcase\singlenovatedleasebenefittitlewithmultipleregowithdisplayedindashboardmoldisktop.orderedtest" id="4844f473-5d4b-4e6e-bcd1-66c1d3480d75" continueAfterFailure="true" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="f5848479-cfd3-f63c-8b8b-61e8a0715628" name="LoginAsMOLMultipleLeasePackaingWithTELSRA" storage="..\..\bin\debug\mmsg.acceptance.mol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="d13ea8fb-3149-f04f-ca57-7b99039b613a" name="SingleNovatedLeaseBenefitTileWithMultipleRegoWithCommaSeparatedIsDisplayedInDashboardForEmployeeWhoIsPackagingMultipleLeasesWithEmployerTELSTRA" storage="..\..\bin\debug\mmsg.acceptance.mol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="d1276327-60cc-0d1b-4244-a74020a257be" name="LogoutAsMOLUser" storage="..\..\bin\debug\mmsg.acceptance.mol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <!--This is already created users present on the UI to execute the scenarios. This would be change as per data on the UI deleted or refreshed.-->
+  <ArrayOfUser>
+    <!--Hard coded Users data for COMETUAT.-->
+    <User>
+      <Name>Cheryl-Anne</Name>
+      <OtherName>Cheryl-Anne</OtherName>
+      <Password>MOL1234</Password>
+      <Email>ppcustomer@maxxia.com.au</Email>
+      <EmployeeNumber>13380481</EmployeeNumber>
+      <EmployerCode>PHCN</EmployerCode>
+      <FirstName>Nithya</FirstName>
+      <MiddleName>Nanda</MiddleName>
+      <LastName>Meryl</LastName>
+      <Surname>Boult</Surname>
+      <Gender>Female</Gender>
+      <GivenName>Cheryl-Anne</GivenName>
+      <MemberNumber>190902</MemberNumber>
+      <DOB>09-05-1974</DOB>
+      <Phone>03 99730006</Phone>
+      <EAMSID>255333740</EAMSID>
+      <UserType>COMETUser</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+    <User>
+      <Name>Mr Mounir Muir Abbott</Name>
+      <OtherName>Cheryl-Anne</OtherName>
+      <Password>MOL1234</Password>
+      <Email>ppcustomer@maxxia.com.au</Email>
+      <EmployeeNumber>11667857</EmployeeNumber>
+      <EmployerCode>PHCN</EmployerCode>
+      <FirstName>Nithya</FirstName>
+      <MiddleName>Nanda</MiddleName>
+      <LastName>Meryl</LastName>
+      <Surname>Boult</Surname>
+      <Gender>Male</Gender>
+      <GivenName>Cheryl-Anne</GivenName>
+      <MemberNumber>190902</MemberNumber>
+      <DOB>11-04-1967</DOB>
+      <Phone>03 9973000</Phone>
+      <EAMSID>255333740</EAMSID>
+      <UserType>NewCOMETUser</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+    <User>
+      <Name>Mr Mounir Muir Abbotta</Name>
+      <OtherName>Cheryl-Anne</OtherName>
+      <Password>MOL1234</Password>
+      <Email>ppcustomer@maxxia.com.au</Email>
+      <EmployeeNumber>11667857</EmployeeNumber>
+      <EmployerCode>PHCN</EmployerCode>
+      <FirstName>Nithya</FirstName>
+      <MiddleName>Nanda</MiddleName>
+      <LastName>Meryl</LastName>
+      <Surname>Boult</Surname>
+      <Gender>Male</Gender>
+      <GivenName>Cheryl-Anne</GivenName>
+      <MemberNumber>190902</MemberNumber>
+      <DOB>11-04-1967</DOB>
+      <Phone>03 9973000</Phone>
+      <EAMSID>255333740</EAMSID>
+      <UserType>TELCEmployee</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+    <User>
+      <Name>452280245</Name>
+      <OtherName>UdyiY5wr</OtherName>
+      <Password>5fraPX3I</Password>
+      <Email>Sherlock_Test@remserv.com.au</Email>
+      <EmployeeNumber>13380481</EmployeeNumber>
+      <EmployerCode>PHCN</EmployerCode>
+      <FirstName>Dev</FirstName>
+      <MiddleName>Hegde</MiddleName>
+      <LastName>Ks</LastName>
+      <Surname>Boult</Surname>
+      <Gender>Female</Gender>
+      <GivenName>Cheryl-Anne</GivenName>
+      <MemberNumber>190902</MemberNumber>
+      <DOB>09-05-1974</DOB>
+      <Phone>03 99730006</Phone>
+      <EAMSID>255333740</EAMSID>
+      <UserType>MOLWalletTransactionUser</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+    <User>
+      <Name>072270859</Name>
+      <Password>MOL1234</Password>
+      <Email>Sherlock_Test@remserv.com.au</Email>
+      <FirstName>Nithya</FirstName>
+      <MiddleName>Nanda</MiddleName>
+      <LastName>Meryl</LastName>
+      <Surname>Boult</Surname>
+      <Phone>04 00000000</Phone>
+      <UserType>ROLUser</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+    <User>
+      <Name>310716220</Name>
+      <Password>MOL1234</Password>
+      <Email>Sherlock_Test@remserv.com.au</Email>
+      <FirstName>Nithya</FirstName>
+      <MiddleName>Nanda</MiddleName>
+      <LastName>Meryl</LastName>
+      <Surname>Boult</Surname>
+      <Phone>04 00000000</Phone>
+      <UserType>ROLNoReimbursement</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+    <User>
+      <Name>dmzpmxx9914490</Name>
+      <OtherName>Password1234</OtherName>
+      <Password>5fraPX3I</Password>
+      <Email>Sherlock_Test@remserv.com.au</Email>
+      <EmployeeNumber>13380481</EmployeeNumber>
+      <EmployerCode>PHCN</EmployerCode>
+      <FirstName>Dev</FirstName>
+      <MiddleName>Hegde</MiddleName>
+      <LastName>Ks</LastName>
+      <Surname>Boult</Surname>
+      <Gender>Female</Gender>
+      <GivenName>Cheryl-Anne</GivenName>
+      <MemberNumber>190902</MemberNumber>
+      <DOB>09-05-1974</DOB>
+      <Phone>03 99730006</Phone>
+      <EAMSID>255333740</EAMSID>
+      <UserType>ROLWalletTransactionUser</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+    <User>
+      <Name>050678701</Name>
+      <Password>MOL1234</Password>
+      <Email>Sherlock_Test@remserv.com.au</Email>
+      <FirstName>Dev</FirstName>
+      <MiddleName>Hegde</MiddleName>
+      <LastName>Ks</LastName>
+      <UserType>MOLUser</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+    <User>
+      <Name>050678701</Name>
+      <Password>MOL1234</Password>
+      <Email>Sherlock_Test@remserv.com.au</Email>
+      <FirstName>Dev</FirstName>
+      <MiddleName>Hegde</MiddleName>
+      <LastName>Ks</LastName>
+      <UserType>MOLRandomUser</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+    <User>
+      <Name>125176448</Name>
+      <Password>Password123</Password>
+      <Email>Sherlock_Test@remserv.com.au</Email>
+      <FirstName>Dev</FirstName>
+      <MiddleName>Hegde</MiddleName>
+      <LastName>Ks</LastName>
+      <UserType>MOLNovetedLeaseBenefitSingleTitle</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+    <User>
+      <Name>018890521</Name>
+      <Password>Password123</Password>
+      <Email>Sherlock_Test@remserv.com.au</Email>
+      <FirstName>Dev</FirstName>
+      <MiddleName>Hegde</MiddleName>
+      <LastName>Ks</LastName>
+      <UserType>MOLMultipleLeasePackaingWithTELSRA</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+    <User>
+      <Name>779159725</Name>
+      <Password>Password123</Password>
+      <Email>Sherlock_Test@remserv.com.au</Email>
+      <FirstName>Dev</FirstName>
+      <MiddleName>Hegde</MiddleName>
+      <LastName>Ks</LastName>
+      <UserType>MOLBenefitMergeWithEmployeer</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+    <User>
+      <Name>050678701</Name>
+      <Password>MOL1234</Password>
+      <Email>Sherlock_Test@remserv.com.au</Email>
+      <FirstName>Dev</FirstName>
+      <MiddleName>Hegde</MiddleName>
+      <LastName>Ks</LastName>
+      <UserType>OnlyVMSUser</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+    <User>
+      <Name>388907968</Name>
+      <Password>Password123</Password>
+      <Email>Sherlock_Test@remserv.com.au</Email>
+      <FirstName>Dev</FirstName>
+      <MiddleName>Hegde</MiddleName>
+      <LastName>Ks</LastName>
+      <UserType>MOLMultipleEmployeerEmployee</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+    <User>
+      <Name>675969415</Name>
+      <Password>Password123</Password>
+      <Email>Sherlock_Test@remserv.com.au</Email>
+      <FirstName>Dev</FirstName>
+      <MiddleName>Hegde</MiddleName>
+      <LastName>Ks</LastName>
+      <UserType>MOLActiveTerminatedEmployeerEmployee</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+    <User>
+      <Name>965714583</Name>
+      <Password>MOL1234</Password>
+      <Email>Sherlock_Test@remserv.com.au</Email>
+      <FirstName>Dev</FirstName>
+      <MiddleName>Hegde</MiddleName>
+      <LastName>Ks</LastName>
+      <UserType>MOLNoReimbursement</UserType>
+      <IsCreated>true</IsCreated>
+      <EnrolementStatus>false</EnrolementStatus>
+    </User>
+  </ArrayOfUser>
+  <ArrayOfPackage>
+    <Package>
+      <EmployerShortName>Peninsula Health</EmployerShortName>
+      <Offering>Peninsula Health</Offering>
+      <EmployerCode>PHCN</EmployerCode>
+      <BusinessEmail>ppcustomer@maxxia.com.au</BusinessEmail>
+      <BusinessPhone>03 99730006</BusinessPhone>
+      <SetUpReason>Initial Setup</SetUpReason>
+      <OfferingName>Peninsula Health</OfferingName>
+      <PackageType>NewPHCNPackage</PackageType>
+      <LivingExpenseCap>10</LivingExpenseCap>
+      <EntertainmentCap>10</EntertainmentCap>
+      <IsCreated>true</IsCreated>
+      <FinancialAdviser>Janesse Woodman</FinancialAdviser>
+    </Package>
+  </ArrayOfPackage>
+  <ArrayOfBenefit>
+    <Benefit>
+      <Benefit1>Airport Lounge Membership</Benefit1>
+      <Benefit2>Living Expense Wallet</Benefit2>
+      <Benefit3>Financial Counselling Fees</Benefit3>
+      <Benefit4>EE Owned Vehicle Registration</Benefit4>
+      <BudgetCalculationMethod>Per Annum</BudgetCalculationMethod>
+      <BenefitType>PHCNBenefit</BenefitType>
+      <BudgetAmount>10</BudgetAmount>
+      <IsCreated>true</IsCreated>
+    </Benefit>
+    <Benefit>
+      <Benefit1>Airport Lounge Membership</Benefit1>
+      <Benefit2>Living Expense Wallet</Benefit2>
+      <Benefit3>Financial Counselling Fees</Benefit3>
+      <Benefit4>EE Owned Vehicle Registration</Benefit4>
+      <BudgetCalculationMethod>Per Annum</BudgetCalculationMethod>
+      <BenefitType>MOLBenefits</BenefitType>
+      <BudgetAmount>10</BudgetAmount>
+      <IsCreated>true</IsCreated>
+    </Benefit>
+  </ArrayOfBenefit>
+</Data>

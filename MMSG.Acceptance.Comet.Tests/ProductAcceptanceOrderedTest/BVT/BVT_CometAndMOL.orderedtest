@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="bvt_cometandmol" storage="c:\users\nithyap\testnitauto\mmsg.acceptance.comet.tests\productacceptanceorderedtest\bvt\bvt_cometandmol.orderedtest" id="3552fb2b-6bb8-49c2-9be4-4e2039194366" continueAfterFailure="true" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="d7ef320c-30ee-4848-a3a7-9d17733559c2" name="bvt_comet" storage="bvt_comet.orderedtest" type="Microsoft.VisualStudio.TestTools.TestTypes.Ordered.AutoSuite, Microsoft.VisualStudio.QualityTools.Tips.OrderedTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="7ad8df06-a213-3c3f-6f7c-799304fa5222" name="ActivateTheCard" storage="..\..\..\mmsg.acceptance.mol.tests\bin\debug\mmsg.acceptance.mol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="df4fdb33-28c6-48d1-8900-21c5096f3ca8" name="bvt_mol" storage="..\..\..\mmsg.acceptance.mol.tests\productacceptanceorderedtest\bvt\bvt_mol.orderedtest" type="Microsoft.VisualStudio.TestTools.TestTypes.Ordered.AutoSuite, Microsoft.VisualStudio.QualityTools.Tips.OrderedTest.ObjectModel,   PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="displaywallettransactionsroldesktop" storage="c:\users\nithyap\testnitauto\mmsg.acceptance.rol.tests\productacceptanceorderedtest\unittestcase\displaywallettransactionsroldesktop.orderedtest" id="29dc8eb1-3676-4ec4-bd9e-1c669f6336ca" continueAfterFailure="true" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="d0a52d70-064f-1975-a3c3-abd4893164a1" name="UserForgotThePassswordAndResetIt" storage="..\..\bin\debug\mmsg.acceptance.rol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="ee28a31f-ba54-943f-673c-2ea7a662740b" name="DisplayWalletTransactions_UserIsAbleToViewTheCardBalanceIfHeHasSPCardOnly" storage="..\..\bin\debug\mmsg.acceptance.rol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <TestLink id="736b3992-a832-8832-3014-b61488bffe55" name="LogoutAsROLUser" storage="..\..\bin\debug\mmsg.acceptance.rol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>

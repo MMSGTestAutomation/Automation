@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<OrderedTest name="makeaclaimroldesktop " storage="c:\users\nithyap\testnitauto\mmsg.acceptance.rol.tests\productacceptanceorderedtest\unittestcase\makeaclaimroldesktop .orderedtest" id="66f23a5a-daf6-4c74-8b7b-d314891b465f" continueAfterFailure="true" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestLinks>
+    <TestLink id="0e0a6c98-dfdf-448c-12a8-78baef762c6f" name="NoReibusmentMessageToBeDisplayed" storage="..\..\bin\debug\mmsg.acceptance.rol.tests.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  </TestLinks>
+</OrderedTest>
