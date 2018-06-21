@@ -132,9 +132,8 @@ namespace MMSG.Automation
         /// <param name="message">This is the message.</param>
         private void Log(string message)
         {
-            string messageToLog = string.Format(" UserName = {0} ~ Password = {1} ~UserType=  {2}  ~ TransactionTimings = {3} ~ BrowserName = {4}"
-                , BaseTestScript.UserName
-                , BaseTestScript.Password
+            string messageToLog = string.Format(" UserName = {0} ~UserType=  {1}  ~ TransactionTimings = {2} ~ BrowserName = {3}"
+                , BaseTestScript.UserName                
                 , BaseTestScript.UserType
                 , BaseTestScript.TransactionTimings
                 , BaseTestScript.CurrentBrowserName
