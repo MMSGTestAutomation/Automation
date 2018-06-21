@@ -4,6 +4,7 @@ using MMSG.Automation.DataTransferObjects;
 using MMSG.Pages.UI_Pages;
 using MMSG.Pages.UI_Pages.Comet;
 using System;
+using System.Configuration;
 using TechTalk.SpecFlow;
 
 namespace MMSG.Acceptance.Comet.Tests.CommonAcceptanceTestDefinitions
@@ -30,9 +31,12 @@ namespace MMSG.Acceptance.Comet.Tests.CommonAcceptanceTestDefinitions
         [Given(@"I access application URL as ""(.*)""")]
         public void LaunchApplicationURL(string userType)
         {
-            Logger.LogMethodEntry(IsTakeScreenShotDuringEntryExit);
-            // Pick Url based on user type enum
             UserType = userType;
+            UserName = User.Get((User.UserTypeEnum)Enum.Parse(typeof(User.UserTypeEnum), userType)).Name.ToString();
+            CurrentBrowserName = ConfigurationManager.AppSettings.Get("Browser");
+            TransactionTimings = DateTime.Now.ToString();
+            Logger.LogMethodEntry(IsTakeScreenShotDuringEntryExit);
+            // Pick Url based on user type enum            
             loginPage = new BrowseMMSGUserURL((User.UserTypeEnum)
                 Enum.Parse(typeof(User.UserTypeEnum), userType));
             //Login  the type of the user
